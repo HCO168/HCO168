@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Wood168">
+  <meta name="keywords" content="个人网站, Wood168, HCO168, 静态网站, GitHub Pages">
+  <meta name="description" content="Wood 的个人网站，已整理为适合 GitHub Pages 发布的静态版本。">
+  <title>Wood 的个人网站</title>
+  <link rel="icon" href="assets/images/icon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="brand">
+        <img src="assets/images/web_icon.png" class="brand-icon" alt="网站图标">
+        <div>
+          <p class="eyebrow">HCO168 / Wood168</p>
+          <h1>Wood 的个人网站</h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="top-nav" aria-label="主导航">
+      <a class="active" href="index.html">主页</a>
+      <a href="pages/resource_list.html">资源</a>
+      <a href="pages/website_intro.html">关于</a>
+      <a href="goodHTML/index.html">精品网页</a>
+    </nav>
+
+    <main class="layout">
+      <aside class="side-nav">
+        <h2>菜单</h2>
+        <a href="#intro">介绍</a>
+        <a href="#profile">个人资料</a>
+      </aside>
+
+      <div class="content">
+        <section class="panel" id="intro">
+          <h2>网站介绍</h2>
+          <div class="action-row">
+            <button type="button" data-action="toggle-intro">展示介绍</button>
+          </div>
+          <div class="inline-box is-hidden" data-intro-box>
+            <p>网站的诞生只是因为一时心血来潮想要做一个属于自己的简易网站。就是现在你看到的这个版本：从原来的传统页面，整理成了更适合静态托管的 GitHub Pages 站点。账号管理、文件上传、IP 接口这类依赖后端的功能，后续如果要恢复，建议再接入独立服务。</p>
+          </div>
+        </section>
+        
+
+        <section class="panel" id="profile">
+          <h2>个人资料</h2>
+          <table class="profile-table">
+            <tr>
+              <th>B 站主页</th>
+              <td><a href="https://space.bilibili.com/1563609725" target="_blank" rel="noreferrer">MC_wood</a></td>
+            </tr>
+            <tr>
+              <th>Steam 主页</th>
+              <td><a href="https://steamcommunity.com/id/A702/" target="_blank" rel="noreferrer">A702</a></td>
+            </tr>
+            <tr>
+              <th>GitHub 主页</th>
+              <td><a href="https://github.com/HCO168" target="_blank" rel="noreferrer">HCO168</a></td>
+            </tr>
+          </table>
+        </section>
+        
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>Wood 的个人网站静态版</span>
+      <span>Hosted on GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
