@@ -9,53 +9,59 @@
   <link rel="icon" href="../assets/images/icon.ico">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body data-page="about">
   <div class="site-shell">
     <header class="site-header">
-      <div class="brand">
-        <img src="../assets/images/web_icon.png" class="brand-icon" alt="网站图标">
-        <div>
-          <p class="eyebrow">HCO168 / About</p>
-          <h1>网站介绍</h1>
+      <div class="header-top">
+        <div class="brand">
+          <img src="../assets/images/web_icon.png" class="brand-icon" alt="网站图标">
+          <div>
+            <p class="eyebrow">HCO168 / About</p>
+            <h1 data-i18n="about.heroTitle">网站介绍</h1>
+          </div>
+        </div>
+        <div class="language-switcher" aria-label="Language switcher">
+          <button type="button" class="lang-button" data-lang="zh">中文</button>
+          <button type="button" class="lang-button" data-lang="en">EN</button>
         </div>
       </div>
     </header>
 
     <nav class="top-nav" aria-label="主导航">
-      <a href="../index.html">主页</a>
-      <a href="resource_list.html">资源</a>
-      <a class="active" href="website_intro.html">关于</a>
-      <a href="../goodHTML/index.html">精品网页</a>
+      <a href="../index.html" data-i18n="nav.home">主页</a>
+      <a href="resource_list.html" data-i18n="nav.resources">资源</a>
+      <a class="active" href="website_intro.html" data-i18n="nav.about">关于</a>
+      <a href="../goodHTML/index.html" data-i18n="nav.goodHtml">精品网页</a>
     </nav>
 
     <main class="layout">
       <aside class="side-nav">
-        <h2>菜单</h2>
-        <a href="#website-intro">网站介绍</a>
-        <a href="#personal">个人资料</a>
+        <h2 data-i18n="common.menu">菜单</h2>
+        <a href="#website-intro" data-i18n="about.sideIntro">网站介绍</a>
+        <a href="#personal" data-i18n="about.sideProfile">个人资料</a>
       </aside>
 
       <div class="content">
         <section class="panel" id="website-intro">
-          <h2>网站介绍</h2>
-          <p>2023.6.23：网站的诞生只是因为一时心血来潮，想要做一个属于自己的简易网站。那时候它非常简陋，只能访问，几乎没有交互。</p>
-          <p>2023.11.20：网站迎来更新，开始尝试文件上传与 Servlet 能力，也逐步从一个纯静态页往更完整的网站方向发展。</p>
-          <p>2026：这个仓库版本把原站里适合保留的静态内容重新整理出来，目标是可以直接部署到 GitHub Pages，同时方便以后继续演进。</p>
+          <h2 data-i18n="about.introTitle">网站介绍</h2>
+          <p data-i18n="about.timeline1">2023.6.23：网站的诞生只是因为一时心血来潮，想要做一个属于自己的简易网站。那时候它非常简陋，只能访问，几乎没有交互。</p>
+          <p data-i18n="about.timeline2">2023.11.20：网站迎来更新，开始尝试文件上传与 Servlet 能力，也逐步从一个纯静态页往更完整的网站方向发展。</p>
+          <p data-i18n="about.timeline3">2026：这个仓库版本把原站里适合保留的静态内容重新整理出来，目标是可以直接部署到 GitHub Pages，同时方便以后继续演进。</p>
         </section>
 
         <section class="panel" id="personal">
-          <h2>个人资料</h2>
+          <h2 data-i18n="about.profileTitle">个人资料</h2>
           <table class="profile-table">
             <tr>
-              <th>B 站主页</th>
+              <th data-i18n="common.bilibili">B 站主页</th>
               <td><a href="https://space.bilibili.com/1563609725?spm_id_from=333.1007.0.0" target="_blank" rel="noreferrer">MC_wood</a></td>
             </tr>
             <tr>
-              <th>Steam 主页</th>
+              <th data-i18n="common.steam">Steam 主页</th>
               <td><a href="https://steamcommunity.com/id/A702/" target="_blank" rel="noreferrer">A702</a></td>
             </tr>
             <tr>
-              <th>GitHub 主页</th>
+              <th data-i18n="common.github">GitHub 主页</th>
               <td><a href="https://github.com/HCO168" target="_blank" rel="noreferrer">HCO168</a></td>
             </tr>
           </table>
@@ -65,9 +71,11 @@
     </main>
 
     <footer class="site-footer">
-      <span>Wood 的个人网站静态版</span>
-      <span>Hosted on GitHub Pages</span>
+      <span data-i18n="footer.staticSite">Wood 的个人网站静态版</span>
+      <span data-i18n="footer.hosted">Hosted on GitHub Pages</span>
     </footer>
   </div>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

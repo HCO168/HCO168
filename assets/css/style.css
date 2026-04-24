@@ -83,10 +83,37 @@ button:focus-visible,
   box-shadow: var(--shadow);
 }
 
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .brand {
   display: flex;
   gap: 18px;
   align-items: center;
+}
+
+.language-switcher {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.lang-button {
+  min-height: 36px;
+  padding: 0 14px;
+  box-shadow: none;
+}
+
+.lang-button.active {
+  background: linear-gradient(180deg, rgba(108, 49, 185, 0.98), rgba(79, 22, 143, 0.96));
+  color: #fff;
 }
 
 .brand-icon {
@@ -323,6 +350,10 @@ button:focus-visible,
 }
 
 @media (max-width: 560px) {
+  .header-top {
+    flex-direction: column;
+  }
+
   .brand {
     align-items: flex-start;
   }

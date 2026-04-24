@@ -10,57 +10,63 @@
   <link rel="icon" href="assets/images/icon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="home">
   <div class="site-shell">
     <header class="site-header" id="top">
-      <div class="brand">
-        <img src="assets/images/web_icon.png" class="brand-icon" alt="网站图标">
-        <div>
-          <p class="eyebrow">HCO168 / Wood168</p>
-          <h1>Wood 的个人网站</h1>
+      <div class="header-top">
+        <div class="brand">
+          <img src="assets/images/web_icon.png" class="brand-icon" alt="网站图标">
+          <div>
+            <p class="eyebrow">HCO168 / Wood168</p>
+            <h1 data-i18n="home.heroTitle">Wood 的个人网站</h1>
+          </div>
+        </div>
+        <div class="language-switcher" aria-label="Language switcher">
+          <button type="button" class="lang-button" data-lang="zh">中文</button>
+          <button type="button" class="lang-button" data-lang="en">EN</button>
         </div>
       </div>
     </header>
 
     <nav class="top-nav" aria-label="主导航">
-      <a class="active" href="index.html">主页</a>
-      <a href="pages/resource_list.html">资源</a>
-      <a href="pages/website_intro.html">关于</a>
-      <a href="goodHTML/index.html">精品网页</a>
+      <a class="active" href="index.html" data-i18n="nav.home">主页</a>
+      <a href="pages/resource_list.html" data-i18n="nav.resources">资源</a>
+      <a href="pages/website_intro.html" data-i18n="nav.about">关于</a>
+      <a href="goodHTML/index.html" data-i18n="nav.goodHtml">精品网页</a>
     </nav>
 
     <main class="layout">
       <aside class="side-nav">
-        <h2>菜单</h2>
-        <a href="#intro">介绍</a>
-        <a href="#profile">个人资料</a>
+        <h2 data-i18n="common.menu">菜单</h2>
+        <a href="#intro" data-i18n="home.sideIntro">介绍</a>
+        <a href="#profile" data-i18n="home.sideProfile">个人资料</a>
       </aside>
 
       <div class="content">
         <section class="panel" id="intro">
-          <h2>网站介绍</h2>
+          <h2 data-i18n="home.introTitle">网站介绍</h2>
           <div class="action-row">
-            <button type="button" data-action="toggle-intro">展示介绍</button>
+            <button type="button" data-action="toggle-intro" data-i18n="home.showIntro">展示介绍</button>
           </div>
           <div class="inline-box is-hidden" data-intro-box>
-            <p>网站的诞生只是因为一时心血来潮想要做一个属于自己的简易网站。就是现在你看到的这个版本：从原来的传统页面，整理成了更适合静态托管的 GitHub Pages 站点。账号管理、文件上传、IP 接口这类依赖后端的功能，后续如果要恢复，建议再接入独立服务。</p>
+            <p data-i18n="home.introBody">网站的诞生只是因为一时心血来潮想要做一个属于自己的简易网站。就是现在你看到的这个版本：从原来的传统页面，整理成了更适合静态托管的 GitHub Pages 站点。账号管理、文件上传、IP 接口这类依赖后端的功能，后续如果要恢复，建议再接入独立服务。</p>
           </div>
         </section>
         
 
         <section class="panel" id="profile">
-          <h2>个人资料</h2>
+          <h2 data-i18n="home.profileTitle">个人资料</h2>
           <table class="profile-table">
             <tr>
-              <th>B 站主页</th>
+              <th data-i18n="common.bilibili">B 站主页</th>
               <td><a href="https://space.bilibili.com/1563609725" target="_blank" rel="noreferrer">MC_wood</a></td>
             </tr>
             <tr>
-              <th>Steam 主页</th>
+              <th data-i18n="common.steam">Steam 主页</th>
               <td><a href="https://steamcommunity.com/id/A702/" target="_blank" rel="noreferrer">A702</a></td>
             </tr>
             <tr>
-              <th>GitHub 主页</th>
+              <th data-i18n="common.github">GitHub 主页</th>
               <td><a href="https://github.com/HCO168" target="_blank" rel="noreferrer">HCO168</a></td>
             </tr>
           </table>
@@ -70,8 +76,8 @@
     </main>
 
     <footer class="site-footer">
-      <span>Wood 的个人网站静态版</span>
-      <span>Hosted on GitHub Pages</span>
+      <span data-i18n="footer.staticSite">Wood 的个人网站静态版</span>
+      <span data-i18n="footer.hosted">Hosted on GitHub Pages</span>
     </footer>
   </div>
 
